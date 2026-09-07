@@ -44,31 +44,8 @@
       box-sizing: border-box;
     }
 
-    .article-header a.logo { display: flex; text-decoration: none; }
-    .article-header a.logo svg { display: block; overflow: visible; width: 42px; height: 32px; }
-    .article-header a.logo polygon {
-      stroke: #fff;
-      stroke-width: 1.15;
-      stroke-linejoin: miter;
-      vector-effect: non-scaling-stroke;
-    }
-    .article-header a.logo .cube {
-      pointer-events: bounding-box;
-      transform-box: fill-box;
-      transform-origin: center;
-      transition: transform 0.12s ease;
-    }
-    .article-header a.logo .face-top { fill: #cfe0f4; }
-    .article-header a.logo .face-left { fill: #7a9ccc; }
-    .article-header a.logo .face-right { fill: #4568a4; }
-    .article-header a.logo .cube:nth-child(odd) .face-top { fill: #dce8f7; }
-    .article-header a.logo .cube:nth-child(3n) .face-left { fill: #6b8ec4; }
-    .article-header a.logo .cube:nth-child(3n+1) .face-right { fill: #3a5a96; }
-    .article-header a.logo .cube:hover { transform: translate(0, -1.2px); }
-    .article-header a.logo .cube:hover .face-top { fill: #f2f7fd; }
-    .article-header a.logo .cube:hover .face-left { fill: #8aa8d6; }
-    .article-header a.logo .cube:hover .face-right { fill: var(--duke-blue); }
     .article-header .home-link { font-size: 100%; color: #333; text-decoration: none; }
+    .article-header .home-link + .home-link { margin-left: 12px; }
     .article-header .home-link:hover { color: var(--duke-blue); }
 
     /* Title block */
@@ -149,13 +126,11 @@
       letter-spacing: -0.03em;
     }
 
-    .note .description { display: inline; font-size: 15px; color: rgba(0, 0, 0, 0.7); }
-
     .paper {
       display: flow-root;
-      margin-bottom: 20px;
-      padding-top: 22px;
-      padding-bottom: 22px;
+      margin-bottom: 12px;
+      padding-top: 20px;
+      padding-bottom: 20px;
     }
 
     .paper img {
@@ -185,8 +160,6 @@
       text-transform: uppercase;
       opacity: 0.6;
     }
-
-    .paper .description { font-size: 15px; color: rgba(0, 0, 0, 0.7); }
 
     .note + .note,
     .paper + .note { padding-top: 10px; border-top: 1px solid var(--rule); }
@@ -237,58 +210,18 @@
 
 <body>
   <div class="article-header">
-    <a class="logo" href="/" aria-label="Home">
-      <svg width="42" height="32" viewBox="-27.38 -8.90 48.27 36.55" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <g class="cube">
-          <polygon class="face-left" stroke="#fff" stroke-width="0.85" stroke-linejoin="miter" points="-6.50,-3.75 0.00,0.00 0.00,7.50 -6.50,3.75"/>
-          <polygon class="face-right" stroke="#fff" stroke-width="0.85" stroke-linejoin="miter" points="6.50,-3.75 0.00,0.00 0.00,7.50 6.50,3.75"/>
-          <polygon class="face-top" stroke="#fff" stroke-width="0.85" stroke-linejoin="miter" points="0.00,-7.50 6.50,-3.75 0.00,0.00 -6.50,-3.75"/>
-        </g>
-        <g class="cube">
-          <polygon class="face-left" stroke="#fff" stroke-width="0.85" stroke-linejoin="miter" points="-12.99,0.00 -6.50,3.75 -6.50,11.25 -12.99,7.50"/>
-          <polygon class="face-right" stroke="#fff" stroke-width="0.85" stroke-linejoin="miter" points="0.00,0.00 -6.50,3.75 -6.50,11.25 0.00,7.50"/>
-          <polygon class="face-top" stroke="#fff" stroke-width="0.85" stroke-linejoin="miter" points="-6.50,-3.75 0.00,0.00 -6.50,3.75 -12.99,0.00"/>
-        </g>
-        <g class="cube">
-          <polygon class="face-left" stroke="#fff" stroke-width="0.85" stroke-linejoin="miter" points="0.00,0.00 6.50,3.75 6.50,11.25 0.00,7.50"/>
-          <polygon class="face-right" stroke="#fff" stroke-width="0.85" stroke-linejoin="miter" points="12.99,0.00 6.50,3.75 6.50,11.25 12.99,7.50"/>
-          <polygon class="face-top" stroke="#fff" stroke-width="0.85" stroke-linejoin="miter" points="6.50,-3.75 12.99,0.00 6.50,3.75 0.00,0.00"/>
-        </g>
-        <g class="cube">
-          <polygon class="face-left" stroke="#fff" stroke-width="0.85" stroke-linejoin="miter" points="-19.49,3.75 -12.99,7.50 -12.99,15.00 -19.49,11.25"/>
-          <polygon class="face-right" stroke="#fff" stroke-width="0.85" stroke-linejoin="miter" points="-6.50,3.75 -12.99,7.50 -12.99,15.00 -6.50,11.25"/>
-          <polygon class="face-top" stroke="#fff" stroke-width="0.85" stroke-linejoin="miter" points="-12.99,0.00 -6.50,3.75 -12.99,7.50 -19.49,3.75"/>
-        </g>
-        <g class="cube">
-          <polygon class="face-left" stroke="#fff" stroke-width="0.85" stroke-linejoin="miter" points="6.50,3.75 12.99,7.50 12.99,15.00 6.50,11.25"/>
-          <polygon class="face-right" stroke="#fff" stroke-width="0.85" stroke-linejoin="miter" points="19.49,3.75 12.99,7.50 12.99,15.00 19.49,11.25"/>
-          <polygon class="face-top" stroke="#fff" stroke-width="0.85" stroke-linejoin="miter" points="12.99,0.00 19.49,3.75 12.99,7.50 6.50,3.75"/>
-        </g>
-        <g class="cube">
-          <polygon class="face-left" stroke="#fff" stroke-width="0.85" stroke-linejoin="miter" points="-25.98,7.50 -19.49,11.25 -19.49,18.75 -25.98,15.00"/>
-          <polygon class="face-right" stroke="#fff" stroke-width="0.85" stroke-linejoin="miter" points="-12.99,7.50 -19.49,11.25 -19.49,18.75 -12.99,15.00"/>
-          <polygon class="face-top" stroke="#fff" stroke-width="0.85" stroke-linejoin="miter" points="-19.49,3.75 -12.99,7.50 -19.49,11.25 -25.98,7.50"/>
-        </g>
-        <g class="cube">
-          <polygon class="face-left" stroke="#fff" stroke-width="0.85" stroke-linejoin="miter" points="-19.49,11.25 -12.99,15.00 -12.99,22.50 -19.49,18.75"/>
-          <polygon class="face-right" stroke="#fff" stroke-width="0.85" stroke-linejoin="miter" points="-6.50,11.25 -12.99,15.00 -12.99,22.50 -6.50,18.75"/>
-          <polygon class="face-top" stroke="#fff" stroke-width="0.85" stroke-linejoin="miter" points="-12.99,7.50 -6.50,11.25 -12.99,15.00 -19.49,11.25"/>
-        </g>
-        <g class="cube">
-          <polygon class="face-left" stroke="#fff" stroke-width="0.85" stroke-linejoin="miter" points="-12.99,15.00 -6.50,18.75 -6.50,26.25 -12.99,22.50"/>
-          <polygon class="face-right" stroke="#fff" stroke-width="0.85" stroke-linejoin="miter" points="0.00,15.00 -6.50,18.75 -6.50,26.25 0.00,22.50"/>
-          <polygon class="face-top" stroke="#fff" stroke-width="0.85" stroke-linejoin="miter" points="-6.50,11.25 0.00,15.00 -6.50,18.75 -12.99,15.00"/>
-        </g>
-      </svg>
-    </a>
-    <a class="home-link" href="/cristal/">Cristal</a>
+    <a class="home-link" href="/cristal/">Cristal (for now)</a>
+    <a class="home-link" href="https://x.com/mattdbrr">X</a>
   </div>
 
   <div class="title">
     <h1><span>Matthieu</span><span>de Brion</span></h1>
-    <p>Working notes and longer articles on how models work and what that
-       implies: interpretability, the mathematics of transformers, path
-       dependence, multi-agent safety, and whatever the next note actually is.</p>
+    <p>I study <strong>deep learning</strong>, with a particular interest in
+       <strong>AI Safety and alignment</strong>. I am mostly curious to
+       understand deeply <strong>intelligence</strong>. I am completing an M2
+       in Intelligent Systems at Sorbonne Université and looking for a
+       research internship or any related research position before pursuing
+       a PhD in deep learning.</p>
   </div>
 
   <div class="container">
@@ -299,28 +232,14 @@
       <a class="paper" href="artificial-consciousness-and-existential-risk.html">
         <h3>Artificial Consciousness and Existential Risk</h3>
         <div class="byline">Matthieu de Brion</div>
-        <div class="description">Could the mechanisms associated with consciousness
-          also make AI systems more capable—and change how we think about existential
-          risk?</div>
-      </a>
-
-      <a class="paper" href="jacobian-lens.html">
-        <h3>The Jacobian Lens</h3>
-        <div class="byline">Matthieu de Brion</div>
-        <div class="description">Using the model's averaged Jacobian to translate
-          intermediate residual states into vocabulary predictions, without training
-          a separate probe. Builds the ideas of Jacobian, first-order approximation,
-          and linearization from scratch, then compares the J-lens against the logit
-          and tuned lenses.</div>
       </a>
 
       <!-- Template rows. Copy one of these per entry.
 
-      A short note: title and description run together on one line.
+      A short note:
 
       <a class="note" href="URL">
         <h3>Title of the note</h3>
-        <div class="description">One or two sentences.</div>
       </a>
 
       A full article: optional thumbnail floats right.
@@ -329,7 +248,6 @@
         <img src="thumbnail.png" alt="">
         <h3>Title of the article</h3>
         <div class="byline">Authors</div>
-        <div class="description">A paragraph of summary.</div>
       </a>
 
       Start a new date group with:

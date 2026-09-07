@@ -1,0 +1,43 @@
+<!-- Saved from the old article-header logo (removed 2026-09-07 for a more minimalist header). Reuse by pasting back into the header markup with its .article-header a.logo CSS rules. -->
+<svg width="42" height="32" viewBox="-27.38 -8.90 48.27 36.55" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <g class="cube">
+    <polygon class="face-left" stroke="#fff" stroke-width="0.85" stroke-linejoin="miter" points="-6.50,-3.75 0.00,0.00 0.00,7.50 -6.50,3.75"/>
+    <polygon class="face-right" stroke="#fff" stroke-width="0.85" stroke-linejoin="miter" points="6.50,-3.75 0.00,0.00 0.00,7.50 6.50,3.75"/>
+    <polygon class="face-top" stroke="#fff" stroke-width="0.85" stroke-linejoin="miter" points="0.00,-7.50 6.50,-3.75 0.00,0.00 -6.50,-3.75"/>
+  </g>
+  <g class="cube">
+    <polygon class="face-left" stroke="#fff" stroke-width="0.85" stroke-linejoin="miter" points="-12.99,0.00 -6.50,3.75 -6.50,11.25 -12.99,7.50"/>
+    <polygon class="face-right" stroke="#fff" stroke-width="0.85" stroke-linejoin="miter" points="0.00,0.00 -6.50,3.75 -6.50,11.25 0.00,7.50"/>
+    <polygon class="face-top" stroke="#fff" stroke-width="0.85" stroke-linejoin="miter" points="-6.50,-3.75 0.00,0.00 -6.50,3.75 -12.99,0.00"/>
+  </g>
+  <g class="cube">
+    <polygon class="face-left" stroke="#fff" stroke-width="0.85" stroke-linejoin="miter" points="0.00,0.00 6.50,3.75 6.50,11.25 0.00,7.50"/>
+    <polygon class="face-right" stroke="#fff" stroke-width="0.85" stroke-linejoin="miter" points="12.99,0.00 6.50,3.75 6.50,11.25 12.99,7.50"/>
+    <polygon class="face-top" stroke="#fff" stroke-width="0.85" stroke-linejoin="miter" points="6.50,-3.75 12.99,0.00 6.50,3.75 0.00,0.00"/>
+  </g>
+  <g class="cube">
+    <polygon class="face-left" stroke="#fff" stroke-width="0.85" stroke-linejoin="miter" points="-19.49,3.75 -12.99,7.50 -12.99,15.00 -19.49,11.25"/>
+    <polygon class="face-right" stroke="#fff" stroke-width="0.85" stroke-linejoin="miter" points="-6.50,3.75 -12.99,7.50 -12.99,15.00 -6.50,11.25"/>
+    <polygon class="face-top" stroke="#fff" stroke-width="0.85" stroke-linejoin="miter" points="-12.99,0.00 -6.50,3.75 -12.99,7.50 -19.49,3.75"/>
+  </g>
+  <g class="cube">
+    <polygon class="face-left" stroke="#fff" stroke-width="0.85" stroke-linejoin="miter" points="6.50,3.75 12.99,7.50 12.99,15.00 6.50,11.25"/>
+    <polygon class="face-right" stroke="#fff" stroke-width="0.85" stroke-linejoin="miter" points="19.49,3.75 12.99,7.50 12.99,15.00 19.49,11.25"/>
+    <polygon class="face-top" stroke="#fff" stroke-width="0.85" stroke-linejoin="miter" points="12.99,0.00 19.49,3.75 12.99,7.50 6.50,3.75"/>
+  </g>
+  <g class="cube">
+    <polygon class="face-left" stroke="#fff" stroke-width="0.85" stroke-linejoin="miter" points="-25.98,7.50 -19.49,11.25 -19.49,18.75 -25.98,15.00"/>
+    <polygon class="face-right" stroke="#fff" stroke-width="0.85" stroke-linejoin="miter" points="-12.99,7.50 -19.49,11.25 -19.49,18.75 -12.99,15.00"/>
+    <polygon class="face-top" stroke="#fff" stroke-width="0.85" stroke-linejoin="miter" points="-19.49,3.75 -12.99,7.50 -19.49,11.25 -25.98,7.50"/>
+  </g>
+  <g class="cube">
+    <polygon class="face-left" stroke="#fff" stroke-width="0.85" stroke-linejoin="miter" points="-19.49,11.25 -12.99,15.00 -12.99,22.50 -19.49,18.75"/>
+    <polygon class="face-right" stroke="#fff" stroke-width="0.85" stroke-linejoin="miter" points="-6.50,11.25 -12.99,15.00 -12.99,22.50 -6.50,18.75"/>
+    <polygon class="face-top" stroke="#fff" stroke-width="0.85" stroke-linejoin="miter" points="-12.99,7.50 -6.50,11.25 -12.99,15.00 -19.49,11.25"/>
+  </g>
+  <g class="cube">
+    <polygon class="face-left" stroke="#fff" stroke-width="0.85" stroke-linejoin="miter" points="-12.99,15.00 -6.50,18.75 -6.50,26.25 -12.99,22.50"/>
+    <polygon class="face-right" stroke="#fff" stroke-width="0.85" stroke-linejoin="miter" points="0.00,15.00 -6.50,18.75 -6.50,26.25 0.00,22.50"/>
+    <polygon class="face-top" stroke="#fff" stroke-width="0.85" stroke-linejoin="miter" points="-6.50,11.25 0.00,15.00 -6.50,18.75 -12.99,15.00"/>
+  </g>
+</svg>

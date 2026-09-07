@@ -5,8 +5,51 @@
   <meta charset="utf8">
   <title>Artificial Consciousness and Existential Risk</title>
   <meta name="description" content="Could the mechanisms associated with consciousness also make AI systems more capable—and change how we think about existential risk?">
-  <link rel="canonical" href="https://matthieudebrion.github.io/cristal/artificial-consciousness-and-existential-risk.html">
+  <link rel="canonical" href="https://matthieudebrion.github.io/blog/artificial-consciousness-and-existential-risk.html">
   <style>
+    d-article {
+      padding-top: 3rem;
+      padding-bottom: 5rem;
+    }
+
+    d-article > .article-lede {
+      margin-bottom: 1.75rem;
+      color: rgba(0, 0, 0, 0.72);
+      font-size: 1.12em;
+      line-height: 1.75;
+    }
+
+    d-article > .essay-section {
+      grid-column: text;
+      margin: 0;
+      padding: 3.5rem 0 1rem;
+    }
+
+    d-article > .essay-section + .essay-section {
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    d-article .essay-section h2:first-child {
+      margin-top: 0;
+    }
+
+    d-article .essay-section p,
+    d-article .essay-section blockquote,
+    d-article .essay-section ul {
+      margin-bottom: 1.3em;
+    }
+
+    d-article .essay-section aside {
+      display: block;
+      margin: 1.75rem 0;
+      padding: 1rem 1.1rem;
+      border-left: 2px solid rgba(1, 33, 105, 0.35);
+      background: #f8f9fb;
+      color: rgba(0, 0, 0, 0.66);
+      font-size: 0.9em;
+      line-height: 1.65;
+    }
+
     d-article .central-question {
       margin-top: 1.75em;
       margin-bottom: 1.75em;
@@ -20,6 +63,16 @@
 
     d-article .reading-list {
       margin-top: 0.6em;
+    }
+
+    @media (max-width: 767px) {
+      d-article {
+        padding-top: 2rem;
+      }
+
+      d-article > .essay-section {
+        padding-top: 2.5rem;
+      }
     }
   </style>
 </head>
@@ -40,7 +93,6 @@
 
   <d-title>
     <h1>Artificial Consciousness and Existential Risk</h1>
-    <p>Could the mechanisms associated with consciousness also make AI systems more capable—and change how we think about existential risk?</p>
   </d-title>
 
   <d-byline></d-byline>
@@ -63,76 +115,88 @@
   <d-article>
     <d-toc></d-toc>
 
-    <p>In biology, more intelligent species seem to have richer inner lives—what scientists refer to as <em>phenomenal consciousness</em>. A naive question, therefore, is: does more intelligence imply more consciousness? As model capabilities increase, could that be enough for some form of consciousness to emerge? Conversely, if we develop an algorithm that gives rise to consciousness, would that make the model more capable? In this essay, we explore this interdependence.</p>
+    <p class="article-lede">In biology, more intelligent species seem to have richer inner lives—what scientists refer to as <em>phenomenal consciousness</em>. A naive question, therefore, is: does more intelligence imply more consciousness? As model capabilities increase, could that be enough for some form of consciousness to emerge? Conversely, if we develop an algorithm that gives rise to consciousness, would that make the model more capable? This essay explores that possible interdependence and why it matters for AI safety.</p>
 
-    <h2>What We Mean by Intelligence</h2>
+    <section class="essay-section" aria-labelledby="intelligence">
+      <h2 id="intelligence">What We Mean by Intelligence</h2>
 
-    <p>First, let’s define what we mean by intelligence in the context of artificial intelligence. <a href="https://www.goertzel.org/agiri06/%5B2%5D%20A-Collection-of-Definitions-of-Intelligence-1.pdf">Shane Legg and Marcus Hutter</a> propose the following definition:</p>
+      <p>First, let’s define what we mean by intelligence in the context of artificial intelligence. <a href="https://www.goertzel.org/agiri06/%5B2%5D%20A-Collection-of-Definitions-of-Intelligence-1.pdf">Shane Legg and Marcus Hutter</a> propose the following definition:</p>
 
-    <blockquote>
-      <p>Intelligence measures an agent’s ability to achieve goals in a wide range of environments.</p>
-    </blockquote>
+      <blockquote>
+        <p>Intelligence measures an agent’s ability to achieve goals in a wide range of environments.</p>
+      </blockquote>
 
-    <p>Nowadays, models seem increasingly capable across a wide range of tasks, but there is something to keep in mind about this progress. Models keep getting better at apparently new tasks, while at the same time training has expanded to include more datasets, more tasks, more modalities, and more environments as a result of the scaling era.</p>
+      <p>Nowadays, models seem increasingly capable across a wide range of tasks, but there is something to keep in mind about this progress. Models keep getting better at apparently new tasks, while at the same time training has expanded to include more datasets, more tasks, more modalities, and more environments as a result of the scaling era.</p>
 
-    <div class="central-question">Do models really generalize better, or do we progressively make fewer environments unfamiliar to them?</div>
+      <div class="central-question">Do models really generalize better, or do we progressively make fewer environments unfamiliar to them?</div>
 
-    <p>At one extreme, we could imagine approaching generalization mostly by covering more and more situations during training. But this cannot scale to every possible environment. The other possibility is to develop better learning mechanisms that allow a model to adapt to genuinely new environments.</p>
+      <p>At one extreme, we could imagine approaching generalization mostly by covering more and more situations during training. But this cannot scale to every possible environment. The other possibility is to develop better learning mechanisms that allow a model to adapt to genuinely new environments.</p>
 
-    <p>This distinction seems important if intelligence is supposed to measure an agent’s ability to succeed across a wide range of environments.</p>
+      <p>This distinction seems important if intelligence is supposed to measure an agent’s ability to succeed across a wide range of environments.</p>
 
-    <aside>It could be interesting to look at <a href="https://metr.org/">METR’s evaluations</a> here, and more generally at how AI capability forecasting distinguishes broader training coverage from genuine improvements in generalization.</aside>
+      <aside>It could be interesting to look at <a href="https://metr.org/">METR’s evaluations</a> here, and more generally at how AI capability forecasting distinguishes broader training coverage from genuine improvements in generalization.</aside>
 
-    <p>Genuine generalization means handling a situation nothing prepared you for, and perhaps the human capacity for that lies in some form of consciousness mechanism.</p>
+      <p>Genuine generalization means handling a situation nothing prepared you for, and perhaps the human capacity for that lies in some mechanism associated with consciousness.</p>
+    </section>
 
-    <h2>What We Mean by Consciousness</h2>
+    <section class="essay-section" aria-labelledby="consciousness">
+      <h2 id="consciousness">What We Mean by Consciousness</h2>
 
-    <p><em>Access consciousness</em> refers to information being available for reasoning, report, and the control of behaviour. Current models plausibly have it, and that is exactly what makes the phenomenal question worth asking about them.</p>
+      <p><em>Access consciousness</em> refers to information being available for reasoning, report, and the control of behaviour. Current models plausibly have it, and that is exactly what makes the phenomenal question worth asking about them.</p>
 
-    <p>There is no rigorous and universally accepted definition of consciousness, but for convenience we will use <em>phenomenal consciousness</em> to refer to the subjective, experiential aspect of consciousness: what it feels like, the experience itself.</p>
+      <p>There is no rigorous and universally accepted definition of consciousness, but for convenience we will use <em>phenomenal consciousness</em> to refer to the subjective, experiential aspect of consciousness: what it feels like, the experience itself.</p>
 
-    <p>One theory of consciousness, called <a href="https://plato.stanford.edu/entries/consciousness-neuroscience/#GlobWorkTheo">Global Workspace Theory</a>, proposes that conscious experience involves the widespread broadcast of selected information through a shared representational space. This definition is a bit abstract. Broadcasting here means that some selected information becomes available to many different specialized systems at the same time.</p>
+      <p>One theory of consciousness, called <a href="https://plato.stanford.edu/entries/consciousness-neuroscience/#GlobWorkTheo">Global Workspace Theory</a>, proposes that conscious experience involves the widespread broadcast of selected information through a shared representational space. This definition is a bit abstract. Broadcasting here means that some selected information becomes available to many different specialized systems at the same time.</p>
 
-    <p>Let’s use a simple example. If I see a piece of dark chocolate on a table, my perception and my memory can be engaged simultaneously. I recognize the chocolate, remember its taste, perhaps decide that I want it, describe it, and potentially act on that information. In the brain, the idea is that information about the chocolate becomes globally available to systems involved in perception, memory, action, and language.</p>
+      <p>Let’s use a simple example. If I see a piece of dark chocolate on a table, my perception and my memory can be engaged simultaneously. I recognize the chocolate, remember its taste, perhaps decide that I want it, describe it, and potentially act on that information. In the brain, the idea is that information about the chocolate becomes globally available to systems involved in perception, memory, action, and language.</p>
 
-    <p>Another theory is <a href="https://plato.stanford.edu/entries/consciousness-higher/">Higher-Order Thought Theory</a>. It assumes that consciousness requires higher-order representations, or thoughts about other primary mental states. It is not only seeing the chocolate, but also having some representation that <em>I am seeing the chocolate</em>.</p>
+      <p>Another theory is <a href="https://plato.stanford.edu/entries/consciousness-higher/">Higher-Order Thought Theory</a>. It assumes that consciousness requires higher-order representations, or thoughts about other primary mental states. It is not only seeing the chocolate, but also having some representation that <em>I am seeing the chocolate</em>.</p>
 
-    <p>Many theories of consciousness like these two are compatible with the computational functionalism hypothesis, according to which implementing a certain kind of functional or computational organization could be necessary and sufficient for the emergence of consciousness.</p>
+      <p>Many theories of consciousness like these two are compatible with the computational functionalism hypothesis, according to which implementing a certain kind of functional or computational organization could be necessary and sufficient for the emergence of consciousness.</p>
 
-    <h3>Links to Dive Into</h3>
+      <h3>Links to Dive Into</h3>
 
-    <ul class="reading-list">
-      <li><a href="https://whatisintelligence.antikythera.org/chapter-01/"><em>What Is Intelligence?</em>, Chapter 1: Life as Computation</a></li>
-      <li><a href="https://bigthink.com/the-well/physics-doesnt-explain-the-universe-computation-do/">Physics Doesn’t Explain the Universe. Computation Does</a></li>
-    </ul>
+      <ul class="reading-list">
+        <li><a href="https://whatisintelligence.antikythera.org/chapter-01/"><em>What Is Intelligence?</em>, Chapter 1: Life as Computation</a></li>
+        <li><a href="https://bigthink.com/the-well/physics-doesnt-explain-the-universe-computation-do/">Physics Doesn’t Explain the Universe. Computation Does</a></li>
+      </ul>
+    </section>
 
-    <h2>Grounding</h2>
+    <section class="essay-section" aria-labelledby="grounding">
+      <h2 id="grounding">Grounding</h2>
 
-    <p>One concept that may matter for phenomenal consciousness is grounding. A representation is grounded when its meaning is connected to perception, action, or interaction with the world rather than only to relationships between symbols. For example, I do not only know the word <em>hot</em>. I have touched hot things, experienced heat, moved my hand away from it, and associated the concept with perception, memory, and action. An LLM mainly learns the concept <em>hot</em> through statistical relationships in data. We can therefore have the intuition that its representation of <em>hot</em> is less grounded than a human representation.</p>
+      <p>One concept that may matter for phenomenal consciousness is grounding. A representation is grounded when its meaning is connected to perception, action, or interaction with the world rather than only to relationships between symbols. For example, I do not only know the word <em>hot</em>. I have touched hot things, experienced heat, moved my hand away from it, and associated the concept with perception, memory, and action. An LLM mainly learns the concept <em>hot</em> through statistical relationships in data. We can therefore have the intuition that its representation of <em>hot</em> is less grounded than a human representation.</p>
 
-    <p>But there is an important point here. I am currently assuming that grounding matters for phenomenal consciousness. Grounding could be necessary for consciousness, merely correlated with it in biological systems, or not necessary at all. The same uncertainty applies to global broadcasting, higher-order representations, and all computational mechanisms proposed by theories of consciousness. All of these questions remain open, and it is their plausible interdependence that we are going to study.</p>
+      <p>But there is an important point here. I am currently assuming that grounding matters for phenomenal consciousness. Grounding could be necessary for consciousness, merely correlated with it in biological systems, or not necessary at all. The same uncertainty applies to global broadcasting, higher-order representations, and all computational mechanisms proposed by theories of consciousness. All of these questions remain open, and it is their plausible interdependence that we are going to study.</p>
+    </section>
 
-    <h2>The Interdependence</h2>
+    <section class="essay-section" aria-labelledby="interdependence">
+      <h2 id="interdependence">The Interdependence</h2>
 
-    <p><strong>Let me emphasize an extremely important point: a system does not need to be conscious to be extremely capable or dangerous.</strong></p>
+      <p><strong>Let me emphasize an extremely important point: a system does not need to be conscious to be extremely capable or dangerous.</strong></p>
 
-    <p>But what if there exists some form of interdependence between consciousness and intelligence? More precisely, what if the computational functionalism hypothesis is true and we can develop an algorithm—or any computational mechanism—that gives rise to some sort of consciousness and also happens to contribute to general intelligence?</p>
+      <p>But what if there exists some form of interdependence between consciousness and intelligence? More precisely, what if the computational functionalism hypothesis is true and we can develop an algorithm—or any computational mechanism—that gives rise to some sort of consciousness and also happens to contribute to general intelligence?</p>
 
-    <p>If so, the most interesting possibility is that mechanisms proposed by theories of consciousness might also make some forms of intelligence easier to achieve, in particular the ability to adapt to genuinely new environments. But why?</p>
+      <p>If so, the most interesting possibility is that mechanisms proposed by theories of consciousness might also make some forms of intelligence easier to achieve, in particular the ability to adapt to genuinely new environments. But why?</p>
 
-    <p>Let’s start with quantum computation and the quantum advantage principle. Quantum advantage refers to the fact that some computations can become much easier in a quantum computational space than in a classical one. Could there be an analogue for mechanisms associated with consciousness? Are there some computations that become substantially easier for architectures implementing mechanisms such as global broadcasting, grounding, or higher-order representations? We will explore that in more depth in Part 2.</p>
+      <p>Consider quantum computation and the quantum advantage principle. Quantum advantage refers to the fact that some computations can become much easier in a quantum computational space than in a classical one. Could there be an analogue for mechanisms associated with consciousness? Are there computations that become substantially easier for architectures implementing global broadcasting, grounding, or higher-order representations?</p>
 
-    <h2>Why This Matters for Safety</h2>
+      <p>This analogy does not show that such an advantage exists. It gives us a concrete research question: whether these mechanisms merely accompany consciousness, or whether they also provide useful computational shortcuts for generalization, planning, and adaptation.</p>
+    </section>
 
-    <p>Let me emphasize it again, because it is an extremely important point. A system does not need to be conscious to be extremely capable or dangerous. As <a href="https://yoshuabengio.org/en/blog/reasoning-through-arguments-against-taking-ai-safety-seriously">Yoshua Bengio writes</a>:</p>
+    <section class="essay-section" aria-labelledby="safety">
+      <h2 id="safety">Why This Matters for Safety</h2>
 
-    <blockquote>
-      <p>“Consciousness is not well understood and it is not clear that it is necessary for either AGI or ASI, and it will not necessarily matter for potential existential AGI risk. What will matter most and is more concrete are the capabilities and intentions of ASI systems.”</p>
-    </blockquote>
+      <p>Let me emphasize it again, because it is an extremely important point. A system does not need to be conscious to be extremely capable or dangerous. As <a href="https://yoshuabengio.org/en/blog/reasoning-through-arguments-against-taking-ai-safety-seriously">Yoshua Bengio writes</a>:</p>
 
-    <p>By now we can see the connection between intelligence and consciousness research, and the potentially dangerous trade-off it creates. Artificial consciousness research could help us understand cognition and mechanisms relevant to alignment or interpretability. But the same research could also discover mechanisms that make models significantly more capable. The AI safety relevance of consciousness research may therefore come not from consciousness itself, but from the computational machinery that theories of consciousness lead us to study.</p>
+      <blockquote>
+        <p>“Consciousness is not well understood and it is not clear that it is necessary for either AGI or ASI, and it will not necessarily matter for potential existential AGI risk. What will matter most and is more concrete are the capabilities and intentions of ASI systems.”</p>
+      </blockquote>
 
-    <p>To conclude on a lighter point, there are also risks that do not require existential catastrophe. For example, treating a non-conscious AI system as conscious could create strong psychological effects—or treating a conscious system as non-conscious…</p>
+      <p>By now we can see the connection between intelligence and consciousness research, and the potentially dangerous trade-off it creates. Artificial consciousness research could help us understand cognition and mechanisms relevant to alignment or interpretability. But the same research could also discover mechanisms that make models significantly more capable. The AI safety relevance of consciousness research may therefore come not from consciousness itself, but from the computational machinery that theories of consciousness lead us to study.</p>
+
+      <p>There are also risks that do not require existential catastrophe. Treating a non-conscious AI system as conscious could create strong psychological effects. Treating a conscious system as non-conscious would raise a different and potentially serious set of moral problems. In either case, the uncertainty is itself a reason to study the mechanisms carefully without assuming that consciousness is either necessary for capability or irrelevant to it.</p>
+    </section>
   </d-article>
 
   <d-footer></d-footer>
