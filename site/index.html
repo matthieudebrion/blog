@@ -33,21 +33,6 @@
 
     a { color: var(--duke-blue); }
 
-    /* Masthead */
-
-    .article-header {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      width: 100%;
-      padding: 10px 10px 20px;
-      box-sizing: border-box;
-    }
-
-    .article-header .home-link { font-size: 100%; color: #333; text-decoration: none; }
-    .article-header .home-link + .home-link { margin-left: 12px; }
-    .article-header .home-link:hover { color: var(--duke-blue); }
-
     /* Title block */
 
     .title {
@@ -170,8 +155,9 @@
     .note:hover h3,
     .paper:hover h3 { text-decoration: underline; text-decoration-color: var(--duke-blue); }
 
-    .rss { max-width: 500px; margin: 28px auto 0; font-size: 14px; }
-    .rss a { color: var(--color-dark); }
+    .links { display: flex; gap: 16px; max-width: 500px; margin: 20px auto 0; font-size: 14px; }
+    .links a { color: var(--color-dark); text-decoration: none; }
+    .links a:hover { color: var(--duke-blue); }
 
     @media (min-width: 480px) {
       .note h3 { font-size: 17px; }
@@ -209,11 +195,6 @@
 </head>
 
 <body>
-  <div class="article-header">
-    <a class="home-link" href="/cristal/">Cristal (for now)</a>
-    <a class="home-link" href="https://x.com/mattdbrr">X</a>
-  </div>
-
   <div class="title">
     <h1><span>Matthieu</span><span>de Brion</span></h1>
     <p>I study <strong>deep learning</strong>, with a particular interest in
@@ -222,6 +203,11 @@
        in Intelligent Systems at Sorbonne Université and looking for a
        research internship or any related research position before pursuing
        a PhD in deep learning.</p>
+    <div class="links">
+      <a href="/blog/">Technical Blog</a>
+      <a href="https://x.com/mattdbrr">X</a>
+      <a href="rss.xml">RSS</a>
+    </div>
   </div>
 
   <div class="container">
@@ -257,8 +243,6 @@
       -->
 
     </div>
-
-    <div class="rss"><a href="rss.xml">RSS</a></div>
   </div>
 </body>
 </html>
